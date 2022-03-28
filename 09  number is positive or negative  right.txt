@@ -1,0 +1,36 @@
+// Java Program to Check if a Given Integer
+// is Positive or Negative
+
+import java.io.*;
+
+class GFG {
+
+	// Function to check positive and negative
+	static String checkPosNeg(int x)
+	{
+
+		// checks the number is greater than 0 or not
+		if (x > 0)
+			return "Positive";
+
+		else if (x < 0)
+			return "Negative";
+
+		else
+			return "zero";
+	}
+
+	// Driver Function
+	public static void main(String[] args)
+	{
+		// number to be check
+		int firstNumber = 912;
+		System.out.println(firstNumber + " is "
+						+ checkPosNeg(firstNumber));
+	}
+}
+
+
+output:-
+==========
+912 is Positive

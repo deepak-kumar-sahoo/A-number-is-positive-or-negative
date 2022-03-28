@@ -1,0 +1,29 @@
+// Java Program to Check if a Given
+// Integer is Positive or Negative
+
+import java.io.*;
+
+class GFG {
+	// function to check positive and negative integer
+
+	static String checkPosNeg(int val)
+	{
+
+		String[] result = { "Positive", "Negative" };
+
+		// checks if the number is positive or negative
+		return result[(val >> 31) & 1];
+	}
+	public static void main(String[] args)
+	{
+		int num;
+		num = -15;
+
+		System.out.println(num + " is " + checkPosNeg(num));
+	}
+}
+
+
+output:-
+==========
+-15 is Negative
